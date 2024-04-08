@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  app:
+    image: korneliushen/express:3.1
+    ports:
+      - "3000:3000" # Expose port 3000 to the host
+    environment:
+      - DB_HOST=db # Use the service name "db" as the hostname for connecting to PostgreSQL
+      - DB_USER=postgres # PostgreSQL user (must match the environment variables below for the db service)
+      - DB_PASSWORD=7ufc6qJEZ4Xhq # PostgreSQL password (as above)
+      - DB_NAME=geoguessr_db # The name of your database
+    depends_on:
+      - db # Ensures that the db service starts before the app service
+    networks:
+      - app-network # Specifies the custom network to be used
+
+  db:
+    image: postgres:latest # Use the latest PostgreSQL image from Docker Hub
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persist database data
+    environment:
+      - POSTGRES_USER=postgres # Set the PostgreSQL user
+      - POSTGRES_PASSWORD=7ufc6qJEZ4Xhq # Set the PostgreSQL user's password
+      - POSTGRES_DB=postgres # Specify the default database to be created
+    networks:
+      - app-network # Specifies the custom network to be used
+
+networks:
+  app-network: # Defines a custom network for inter-container communication
+
+volumes:
+  postgres_data: # Persistent volume for PostgreSQL data

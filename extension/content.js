@@ -10,7 +10,7 @@ async function getH1() {
     linkArray.push(link);
     console.log(linkArray);
     if (!linkArray.includes(link)) {
-      await fetch("http://localhost:3000", {
+      await fetch("http://172.31.25.157:3000", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ link }),
