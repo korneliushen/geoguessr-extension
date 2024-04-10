@@ -12,7 +12,7 @@ TBA
 
 Leder av lobbyen er den som aktiverer extensionen, deltakere bruker ikke extensionen.
 
-Gå inn på [geoguessr](hhtps://www.geoguessr.com) og lag et party, deretter klikk på invite players 
+Gå inn på [geoguessr](https://www.geoguessr.com) og lag et party, deretter klikk på invite players 
 ![Illustrasjon av hvor man finner knapp](https://i.ibb.co/6Wx0Sm4/Screenshot-2024-04-10-at-13-22-42.png)
 
 
