@@ -1,7 +1,7 @@
 import express, { json } from "express";
-import { query } from "./db.js";
 import cors from "cors";
 import bodyParser from "body-parser";
+import client from "./db";
 
 const app = express();
 const port = 3000;
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.post("/", async (req, res) => {
   console.log(req.body.link);
-  await query("INSERT INTO games VALUES ($1)", [req.body.link]);
+  await client.execute("INSERT INTO games VALUES ($1)", [req.body.link]);
 });
 
 app.get("/link", async (req, res) => {

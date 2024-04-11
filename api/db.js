@@ -1,14 +1,6 @@
-import pkg from "pg";
-const { Pool } = pkg;
+import { createClient } from "@libsql/client";
 
-const pool = new Pool({
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  host: process.env.DB_HOST,
-  port: 5432,
-  database: process.env.DB_NAME,
+const client = createClient({
+  url: "libsql://geoguessr-db-korneliushen.turso.io",
+  authToken: process.env.TOKEN,
 });
-
-export function query(text, params) {
-  return pool.query(text, params);
-}
