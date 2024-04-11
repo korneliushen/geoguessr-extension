@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 app.post("/", async (req, res) => {
   console.log(req.body.link);
-  await client.execute("INSERT INTO games VALUES ($2)", [req.body.link]);
+  await client.execute("INSERT INTO games VALUES", [req.body.link]);
 });
 
 app.get("/link", async (req, res) => {
