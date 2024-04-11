@@ -17,7 +17,7 @@ app.post("/", async (req, res) => {
 });
 
 app.get("/link", async (req, res) => {
-  let links = await query("SELECT * FROM games");
+  let links = await client.execute("SELECT * FROM games");
   console.log("hello");
   console.log(links);
   res.send(links);
@@ -26,3 +26,5 @@ app.get("/link", async (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+export default app;
