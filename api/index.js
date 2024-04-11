@@ -1,7 +1,7 @@
 import express, { json } from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import client from "./db";
+import client from "./db.js";
 
 const app = express();
 const port = 3000;
