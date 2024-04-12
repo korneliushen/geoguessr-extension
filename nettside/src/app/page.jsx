@@ -7,9 +7,9 @@ import { redirect } from "next/navigation";
 
 export default async function Home() {
   const data = await getLink()
-  let sortedArray = data.rows.reverse()
-  let link = data.rows[0].link
-  console.log(link)
+  console.log(data.rows[0])
+  let sortedArray = data.rows.reverse()[0]
+  let link = sortedArray
   return (
     <>
       <main className="min-h-screen w-screen flex flex-col items-center justify-center bg-gray-800 animate-pulse">
