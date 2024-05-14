@@ -6,7 +6,7 @@ Med denne extensionen kan man enkelt starte et party i geoguessr og kjappere få
 
 ### Installeringsprosess
 
-TBA
+Gå på chrome sin webstore og søk opp IMGG og installer extension derifra
 
 ### Hvordan bruke den
 
