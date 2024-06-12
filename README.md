@@ -6,13 +6,21 @@ Med denne extensionen kan man enkelt starte et party i geoguessr og kjappere få
 
 ### Installeringsprosess
 
-Gå på chrome sin webstore og søk opp IMGG og installer extension derifra
+Installer extension fra [chrome sin webstore](https://chromewebstore.google.com/detail/bgjeknpjmgmdlkkeaeleofnhclhdigog)
+
+_Husk å pin extension for raskere tilgang_
 
 ### Hvordan bruke den
 
 Leder av lobbyen er den som aktiverer extensionen, deltakere bruker ikke extensionen.
 
-Gå inn på [geoguessr](https://www.geoguessr.com) og lag et party, deretter klikk på invite players 
+Gå inn på [geoguessr](https://www.geoguessr.com) og lag et party:
+
+Trykk inn på party
+
+![Illustrasjon på hvor party knappen er](https://i.ibb.co/MR0hx6L/Screenshot-2024-06-12-at-10-34-51.png)
+
+Deretter klikk på invite players 
 ![Illustrasjon av hvor man finner knapp](https://i.ibb.co/6Wx0Sm4/Screenshot-2024-04-10-at-13-22-42.png)
 
 
